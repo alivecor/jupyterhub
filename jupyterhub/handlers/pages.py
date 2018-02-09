@@ -310,7 +310,7 @@ class NodesPageHandler(BaseHandler):
         self.finish(html)
 
 class JobsPageHandler(BaseHandler):
-    """Handler for managing cluster nodes"""
+    """Handler for managing cluster jobs"""
 
     @web.authenticated
     def get(self):
