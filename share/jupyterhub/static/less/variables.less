@@ -9,10 +9,20 @@
 // color blind-friendly alternative to red/green
 // from 5-class RdYlBu via colorbrewer.org
 // eliminate distinction between 'primary' and 'success'
-@brand-primary: #2c7bb6;
+//@brand-primary: #2c7bb6;
+//@brand-success: @brand-primary;
+//@brand-danger: #d7191c;
+
+// Alivecor overrides of standard jupyterhub colors
+@alivecor-green: #2D9F86;
+@alivecor-red: #f15757;
+
+@brand-primary: @alivecor-green;
 @brand-success: @brand-primary;
-@brand-danger: #d7191c;
+@brand-danger: @alivecor-red;
+
+
 
 .btn-jupyter {
-  .button-variant(#fff; @jupyter-orange; @jupyter-red);
+  .button-variant(#fff; @alivecor-green; @alivecor-green);
 }
